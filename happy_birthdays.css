@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+o{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 'Poppins', sans-serif;
+}
+
+body{
+  height: 400px;
+  background: #151320;
+}
+
+.div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background: #252839;
+  opacity:2; border-radius:15px;
+  border-bottom: 5px solid #9933ff;
+  border-top: 5px solid #9933ff;
+  border-left: 5px solid #9933ff;
+  border-right: 5px solid #9933ff;
+}
+
+h2{
+  position: relative;
+  font-size: 7vw;
+  color: #252839;
+  -webkit-text-stroke: 0.3vw #383d52;
+  text-transform: uppercase;
+}
+h2::before{
+  white-space: nowrap;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #00ffff;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #00ffff;
+  overflow: hidden;
+  animation: animate 6s infinite;
+}
+
+@keyframes animate {
+  0%, 10%, 100%{
+    width: 0;
+  }
+  70%, 90%{
+    width: 100%;
+  }
+}
+
+/* ===================== */
+  
+.container{
+border-radius: 5px;
+background: linear-gradient(145deg, #ff004d, #e60041);
+box-shadow:  -18px -18px 36px #7a0023,
+             18px 18px 36px #ff006d;
+}
+  
+/* ===================== */
+
+.div2 {
+    position: relative; left:50px; top: 50px;
+    height:360px;
+    width: 120px;
+    opacity:2; border-radius:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    
+  border-bottom: 5px solid #bfbfbf;
+  border-top: 5px solid #bfbfbf;
+  border-left: 5px solid #bfbfbf;
+  border-right: 5px solid #bfbfbf;
+}
+
+.switch {
+    position: relative;
+    width: 100px;
+    height: 355px;
+    border-radius: 40px;
+    background: #14181c;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    transition: .1s ease;
+    scrollbar-width: none;
+}
+
+.switch::-webkit-scrollbar {
+    display: none;
+}
+
+.switch .btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 32px;
+    background: #000810;
+    cursor: grab;
+}
+
+.switch .btn i {
+    font-size: 2rem;
+    color: #ff4a3a;
+    transition: .1s ease;
+}
+
+.switch.active .btn i {
+    color: #0b8500;
+}
+
+.switch .space {
+    height: 255px;
+    scroll-snap-align: center;
+}
+
+.harold1{
+  width: 200px;
+  position: relative; left: 200px; top: -200px;
+}
+
+/* ===================== */
+
+.boo1{
+  width:30px;
+  height:30px;
+  position:relative; left:355px; bottom:110px; 
+  opacity:0.6; border-radius:40px;
+  background-color:#cc0099;
+  animation: light-color 2s infinite;
+}
+
+.boo2{
+  width:30px;
+  height:30px;
+  position:relative; left:255px; bottom:140px; 
+  opacity:0.6; border-radius:40px;
+  background-color:#cc0099;
+  animation: light-color 1.6s infinite;
+}
+
+.boo3{
+  width:30px;
+  height:30px;
+  position:relative; left:200px; bottom:170px; 
+  opacity:0.6; border-radius:40px;
+  background-color:#cc0099;
+  animation: light-color 1s infinite;
+}
+
+.boo4{
+  width:30px;
+  height:30px;
+  position:relative; left:150px; bottom:200px; 
+  opacity:0.6; border-radius:40px;
+  background-color:#cc0099;
+  animation: light-color 1.3s infinite;
+}
+
+.boo5{
+  width:30px;
+  height:30px;
+  position:relative; left:100px; bottom:230px; 
+  opacity:0.6; border-radius:40px;
+  background-color:#cc0099;
+  animation: light-color2 1.5s infinite;
+}
+
+.boo6{
+  width:30px;
+  height:30px;
+  position:relative; left:10px; bottom:260px; 
+  opacity:0.6; border-radius:40px;
+  background-color:#cc0099;
+  animation: light-color2 1.8s infinite;
+}
+
+@keyframes light-color{
+  
+  from{
+     bottom: 200px
+   }
+   to{
+     bottom: 600px;
+   }
+  
+  15%{background-color:#ff3300}
+  35%{background-color:yellow}
+  55%{background-color:#00ff00}
+  75%{background-color:#3333ff}
+  98%{background-color:#ff0066}
+  }
+ 
+@keyframes light-color2{
+  
+  from{
+     bottom: 200px
+   }
+   to{
+     bottom: 700px;
+   }
+  
+  15%{background-color:#ff3300}
+  35%{background-color:yellow}
+  55%{background-color:#00ff00}
+  75%{background-color:#3333ff}
+  98%{background-color:#ff0066}
+  }
